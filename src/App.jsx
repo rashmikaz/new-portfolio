@@ -1,8 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
-import Mainsection from './components/Mainsection';
-import Aboutsection from './components/Aboutsection';
+import Main from './components/Main';
+import About from './components/About';
+import Project from './components/Project';
 
 const App = () => {
   return (
@@ -10,8 +11,9 @@ const App = () => {
       <Navbar />
       <div className="max-w-7xl mx-auto pt-5 px-6">
         <Routes>
-          <Route path="/" element={<Mainsection />} />
-          <Route path="/about" element={<Aboutsection />} />
+          <Route path="/" element={<Main />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/project" element={<Project />} />
         </Routes>
       </div>
     </Router>
