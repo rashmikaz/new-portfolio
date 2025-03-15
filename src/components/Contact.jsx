@@ -1,6 +1,7 @@
 import React from 'react'
 import SocialButtons from './SocialButtons';
 import aboutimg from "../assets/main.png"
+import Footer from './Footer';
 
 const Contact = () => {
   return (
@@ -16,11 +17,11 @@ const Contact = () => {
         </div>
 
         <div className="border-t border-gray-300 w-full mt-10 relative top-15"></div>
-        <div className="relative bottom-100 left-80">
-            <img src={aboutimg} alt="" />
-        </div>
+        
+            <img src={aboutimg} alt="" className="relative bottom-100 left-70"/>
+        
 
-        <div className="mt-10 max-w-4xl mx-auto p-6 rounded-lg shadow-md relative bottom-90 right-100">
+        <div className="mt-10 max-w-4xl mx-auto p-6 rounded-lg shadow-md relative top-20 right-100">
         <h2 className="text-4xl font-semibold mb-15  text-white">Send me an email</h2>
         <form>
           <div className="grid-cols-1 md:grid-cols-2 gap-4 w-120">
@@ -40,6 +41,7 @@ const Contact = () => {
           <button type="submit" className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md relative left-220 bottom-30">Send email</button>
         </form>
       </div>
+      <Footer />
       
     </div>
   )

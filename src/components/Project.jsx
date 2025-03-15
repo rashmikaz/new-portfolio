@@ -1,4 +1,5 @@
 import portfolioimg from "../assets/portfolio.jpeg"
+import Footer from "./Footer";
 const project = [
     {
       
@@ -70,8 +71,8 @@ const project = [
   export default function ProjectCards() {
     return (
       <div className="container mx-auto px-4 py-12 text-white tracking-wide">
-        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lg:my-20">Speaking of projects</h2>
-        <p className="text-center text-neutral-400 mb-8">Check out what’s been cooking lately</p>
+        <h2 className="text-3xl sm:text-5xl lg:text-6xl text-center my-10 lg:my-20">My Works</h2>
+        <p className="text-center text-neutral-400 mb-8">A collection of projects I've worked on.</p>
         <div className="flex flex-wrap justify-center">
           {project.map((project, index) => (
             <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
@@ -92,6 +93,7 @@ const project = [
             </div>
           ))}
         </div>
+        <Footer />
       </div>
     );
   }
