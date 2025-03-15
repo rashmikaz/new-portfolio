@@ -8,6 +8,7 @@ import { Card } from "flowbite-react";
 import zenuiimg from "../assets/zenUI.png"
 import bigburgerimg from "../assets/big burger.jpeg"
 import smsimg from "../assets/sms-react.jpeg"
+import innovesta2023img from "../assets/innovesta-2023.jpeg"
 
 
 const project = [
@@ -108,10 +109,10 @@ const Main = () => {
       <Card
       className="max-w-sm relative bottom-110 right-100"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
-      imgSrc={portfolioimg}
+      imgSrc={innovesta2023img}
     >
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 ">
-        Noteworthy technology acquisitions 2021
+        Innovesta program Ijse 2023
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
         Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
