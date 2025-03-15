@@ -1,3 +1,10 @@
+import { Framer } from "lucide-react";
+import { Rocket } from "lucide-react";
+import { Hammer } from "lucide-react";
+import { ShieldHalf } from "lucide-react";
+import { Pointer } from "lucide-react";
+import { FolderCode } from "lucide-react";
+
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "Project", href: "/project" },
@@ -8,9 +15,9 @@ export const navItems = [
 export const features = [
   {
     icon: <Framer />,
-    text: "Product UI UX Design",
+    text: "Custom Website Design and Development",
     description:
-      "A well-designed product has a clear purpose. It’s intuitive results in clear business growth. Our UX design process allows you to design new products and re-design existing products to meet your unique needs.",
+      "Create responsive, user-friendly websites using technologies like HTML, CSS, JavaScript, and frameworks such as React, Angular, or Vue.js.",
   },
   {
     icon: <Hammer />,

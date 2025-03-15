@@ -40,6 +40,7 @@ const Contact = () => {
           <button type="submit" className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md relative left-220 bottom-30">Send email</button>
         </form>
       </div>
+      
     </div>
   )
 }
