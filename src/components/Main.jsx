@@ -9,6 +9,7 @@ import bigburgerimg from "../assets/big burger.jpeg"
 import smsimg from "../assets/sms-react.jpeg"
 import innovesta2023img from "../assets/innovesta-2023.jpeg"
 import ijseimg from "../assets/ijse.jpeg"
+import { motion } from 'framer-motion';
 
 
 const project = [
@@ -43,19 +44,29 @@ const Main = () => {
 
   return (
     <div className="flex flex-col items-center lg:mt-18">
-      <div className="w-110 relative right-110 top-9">  
+     <motion.div
+      className="w-110 relative right-100 top-15"
+      initial={{ y: -100, opacity: 0 }} 
+      animate={{ y: 0, opacity: 1 }} 
+      transition={{ type: 'spring', stiffness: 100, damping: 30, duration: 2  }}
+    >
       <h1 className="font-bold text-4xl sm:text-6xl lg:text-8xl tracking-wide">Designer</h1>
-        <p className="text-lg  text-neutral-500 max-w-4xl">
-          UI-focused product designer with expertise in creating design systems and crafting intuitive, user-friendly interfaces that enhance overall user experiences.
-        </p>
-      </div>
+      <p className="text-lg text-neutral-600 max-w-4xl">
+        UI-focused product designer with expertise in creating design systems and crafting intuitive, user-friendly interfaces that enhance overall user experiences.
+      </p>
+    </motion.div>
 
-      <div className="w-100 relative left-90 bottom-35">
-        <h1 className="font-bold text-4xl sm:text-6xl lg:text-8xl tracking-wide">Developer</h1>
-        <p className="text-lg  text-neutral-500 max-w-4xl">
-          Frontend and Backend developer who writes clean, elegant, and efficient code.
-        </p>
-      </div>
+    <motion.div
+      className="w-110 relative left-90 bottom-28"
+      initial={{ y: -100, opacity: 0 }} 
+      animate={{ y: 0, opacity: 1 }} 
+      transition={{ type: 'spring', stiffness: 100, damping: 30, duration: 2 }} 
+    >
+      <h1 className="font-bold text-4xl sm:text-6xl lg:text-8xl tracking-wide">Developer</h1>
+      <p className="text-lg text-neutral-500 max-w-4xl">
+        Frontend and Backend developer who writes clean, elegant, and efficient code.
+      </p>
+    </motion.div>
 
       <div className="text-center mt-6 relative left-80 top-10 w-120">
         <p className="text-xl text-neutral-700 max-w-3xl mx-auto">
