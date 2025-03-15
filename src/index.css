@@ -7,3 +7,12 @@
     font-family: "Poppins", sans-serif;
     color-scheme: dark;
   }
+  .social-icon svg {
+    transition: transform 0.3s ease, fill 0.3s ease;
+  }
+  
+  .social-icon:hover svg {
+    transform: scale(1.2); /* Scale up the icon */
+    fill: #FFFF; /* Change color on hover */
+  }
+  
