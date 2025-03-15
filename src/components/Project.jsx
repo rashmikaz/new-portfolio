@@ -1,6 +1,7 @@
 import portfolioimg from "../assets/portfolio.jpeg"
 import coffeshopimg from "../assets/coffe shop.png"
 import zenuiimg from "../assets/zenUI.png"
+import bigburgerimg from "../assets/big burger.jpeg"
 import Footer from "./Footer";
 const project = [
     {
@@ -26,10 +27,10 @@ const project = [
     },
     {
       
-      title: "Proftfolio,html,css and js",
-      description: "this is my first portfolio,i did this for my coursework",
+      title: "Big burger Restaurant",
+      description: "This project is a simple yet engaging website built to showcase a burger restaurant menu.",
       tags: ["HTML", "Javacript", "CSS"],
-      image: portfolioimg, 
+      image: bigburgerimg, 
     },
     {
       
