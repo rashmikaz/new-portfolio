@@ -1,4 +1,5 @@
 import portfolioimg from "../assets/portfolio.jpeg"
+import coffeshopimg from "../assets/coffe shop.png"
 import Footer from "./Footer";
 const project = [
     {
@@ -10,10 +11,10 @@ const project = [
     },
     {
       
-      title: "Proftfolio,html,css and js",
-      description: "this is my first portfolio,i did this for my coursework",
+      title: "Landing page for coffe shop",
+      description: "his project is a responsive main page for a coffee shop, built using HTML, CSS, and JavaScript.",
       tags: ["HTML", "Javacript", "CSS"],
-      image: portfolioimg, 
+      image: coffeshopimg, 
     },
     {
       
