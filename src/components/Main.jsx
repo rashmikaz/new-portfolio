@@ -9,6 +9,7 @@ import zenuiimg from "../assets/zenUI.png"
 import bigburgerimg from "../assets/big burger.jpeg"
 import smsimg from "../assets/sms-react.jpeg"
 import innovesta2023img from "../assets/innovesta-2023.jpeg"
+import ijseimg from "../assets/ijse.jpeg"
 
 
 const project = [
@@ -107,7 +108,7 @@ const Main = () => {
       </div>
 
       <Card
-      className="max-w-sm relative bottom-110 right-100"
+      className="max-w-sm relative bottom-115 right-100"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={innovesta2023img}
     >
@@ -120,7 +121,7 @@ const Main = () => {
       </Card>
 
       <Card
-      className="max-w-sm relative bottom-215 "
+      className="max-w-sm relative bottom-243 "
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={innovestaimg}
     >
@@ -135,12 +136,12 @@ const Main = () => {
       </Card>
 
       <Card
-      className="max-w-sm relative bottom-385 left-100"
+      className="max-w-sm relative bottom-410 left-100"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
-      imgSrc={portfolioimg}
+      imgSrc={ijseimg}
     >
       <h5 className="text-2xl font-bold tracking-tight text-gray-900 ">
-        Noteworthy technology acquisitions 2021
+        My Software engineering journey with IJSE
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
         Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
