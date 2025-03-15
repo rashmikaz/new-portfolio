@@ -19,7 +19,27 @@ const Contact = () => {
         <div className="relative bottom-100 left-80">
             <img src={aboutimg} alt="" />
         </div>
-      
+
+        <div className="mt-10 max-w-4xl mx-auto p-6 rounded-lg shadow-md relative bottom-90 right-100">
+        <h2 className="text-4xl font-semibold mb-15  text-white">Send me an email</h2>
+        <form>
+          <div className="grid-cols-1 md:grid-cols-2 gap-4 w-120">
+            <div className="mb-8">
+              <label className="block text-sm font-medium text-gray-300">Name</label>
+              <input type="text" className="mt-1 block w-full p-2 border border-gray-600  text-white rounded-md" />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-300">Email</label>
+              <input type="email" className="mt-1 block w-full p-2 border border-gray-600  text-white rounded-md" />
+            </div>
+          </div>
+          <div className="mt-2 relative left-130 bottom-38">
+            <label className="block text-sm font-medium text-gray-300">Message</label>
+            <textarea className="mt-1 block w-full p-2 border border-gray-600  text-white rounded-md" rows="4"></textarea>
+          </div>
+          <button type="submit" className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md relative left-220 bottom-30">Send email</button>
+        </form>
+      </div>
     </div>
   )
 }
