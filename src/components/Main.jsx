@@ -1,7 +1,6 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import mainimg from "../assets/main.png";
-import portfolioimg from "../assets/portfolio.jpeg";
 import innovestaimg from "../assets/innovesta.jpeg"
 import Footer from './Footer';
 import { Card } from "flowbite-react";

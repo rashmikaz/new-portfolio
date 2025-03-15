@@ -2,6 +2,7 @@ import portfolioimg from "../assets/portfolio.jpeg"
 import coffeshopimg from "../assets/coffe shop.png"
 import zenuiimg from "../assets/zenUI.png"
 import bigburgerimg from "../assets/big burger.jpeg"
+import smsimg from "../assets/sms-react.jpeg"
 import Footer from "./Footer";
 const project = [
     {
@@ -33,11 +34,10 @@ const project = [
       image: bigburgerimg, 
     },
     {
-      
-      title: "Proftfolio,html,css and js",
-      description: "this is my first portfolio,i did this for my coursework",
-      tags: ["HTML", "Javacript", "CSS"],
-      image: portfolioimg, 
+      title: "Student Management System",
+      description: "This is project done for my react project in campus as a final project ",
+      tags: ["React", "JavaScript", "tailwindCSS"],
+      image: smsimg,
     },
     {
       

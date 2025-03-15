@@ -5,6 +5,8 @@ import { features } from "../constants";
 import SkillsChart from './SkillsChart';
 import Footer from './Footer';
 
+
+
 const Aboutsection = () => {
   return (
     <div className="flex flex-col items-center mt-6 lg:mt-24">
@@ -13,36 +15,37 @@ const Aboutsection = () => {
      
       <p className="text-xl  text-neutral-500 pt-6 pb-6">I'm a  designer & developer  in Sri Lanka, with a passion for creating intuitive and user-friendly digital experiences</p>
      
-      <p className="text-xl text-neutral-100 leading-8">I’m Rashmika, a passionate and dedicated software engineering student with a deep interest in UI/UX design. My journey in the world of technology started with a curiosity for problem-solving and a fascination with how digital tools can improve user experiences.
+      <p className="text-xl text-neutral-300 leading-8">I’m Rashmika, a passionate and dedicated software engineering student with a deep interest in UI/UX design. My journey in the world of technology started with a curiosity for problem-solving and a fascination with how digital tools can improve user experiences.
       I have honed my skills through hands-on learning and projects that focus on creating intuitive, user-friendly interfaces.My work emphasizes clean code, thoughtful design, and a focus on how users interact with technology, ensuring every project is not only functional but delightful to use.
-      Alongside my academic pursuits
+      
       </p>
      </div>
 
-     <div className="relative bottom-130 left-70">
-      <img src={aboutimg} alt="" />
+     <div className="relative bottom-125 left-70 ">
+      <img src={aboutimg} alt="" className="w-150 mx-auto"/>
      </div>
+
+     <div className="border-t border-gray-300 w-full mt-10 relative bottom-135"></div>
 
      <div>
       <Skill />
      </div>
 
      <div>
-     <p className="text-xl text-neutral-100 leading-8 w-130 relative left-60 bottom-190">I’m Rashmika, a passionate and dedicated software engineering student with a deep interest in UI/UX design. My journey in the world of technology started with a curiosity for problem-solving and a fascination with how digital tools can improve user experiences.
-      I have honed my skills through hands-on learning and projects that focus on creating intuitive, user-friendly interfaces.My work emphasizes clean code, thoughtful design, and a focus on how users interact with technology, ensuring every project is not only functional but delightful to use.
-      Alongside my academic pursuits
+     <p className="text-xl text-neutral-300 leading-8 w-130 relative left-60 bottom-220">
+     As a software engineer and product designer, I leverage my expertise in both design and development to create functional, visually appealing web applications. I have hands-on experience with a wide range of technologies including HTML, CSS, JavaScript, React, and Node.js, and I'm constantly expanding my skill set to stay ahead of the latest trends in the industry.
       </p>
      </div>
 
 
-     <div className="relative bottom-130">
+     <div className="relative bottom-150">
      <div className="text-center">
         <span className="bg-neutral-900 text-gray-300 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase"
         >
           Service
         </span>
         <h2 className="text-3xl sm:text-5xl lg:text-6xl mt-10 lg:mt-20 tracking-wide">
-        Transforming Ideas into Reality
+        My Expertise for Your Success
         </h2>
       </div>
       <div className="flex flex-wrap mt-10 lg:mt-20">
@@ -67,6 +70,8 @@ const Aboutsection = () => {
 
      
       <SkillsChart />
+
+      
       <Footer />
   
     </div>
