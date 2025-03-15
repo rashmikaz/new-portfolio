@@ -3,6 +3,7 @@ import aboutimg from "../assets/main.png"
 import Skill from './Skills';
 import { features } from "../constants";
 import SkillsChart from './SkillsChart';
+import Footer from './Footer';
 
 const Aboutsection = () => {
   return (
@@ -66,6 +67,7 @@ const Aboutsection = () => {
 
      
       <SkillsChart />
+      <Footer />
   
     </div>
   );
