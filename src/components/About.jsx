@@ -24,6 +24,13 @@ const Aboutsection = () => {
       <Skill />
      </div>
 
+     <div>
+     <p className="text-xl text-neutral-100 leading-8 w-130 relative left-60 bottom-190">I’m Rashmika, a passionate and dedicated software engineering student with a deep interest in UI/UX design. My journey in the world of technology started with a curiosity for problem-solving and a fascination with how digital tools can improve user experiences.
+      I have honed my skills through hands-on learning and projects that focus on creating intuitive, user-friendly interfaces.My work emphasizes clean code, thoughtful design, and a focus on how users interact with technology, ensuring every project is not only functional but delightful to use.
+      Alongside my academic pursuits
+      </p>
+     </div>
+
     </div>
   );
 };
