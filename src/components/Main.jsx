@@ -5,25 +5,31 @@ import portfolioimg from "../assets/portfolio.jpeg";
 import innovestaimg from "../assets/innovesta.jpeg"
 import Footer from './Footer';
 import { Card } from "flowbite-react";
+import zenuiimg from "../assets/zenUI.png"
+import bigburgerimg from "../assets/big burger.jpeg"
+import smsimg from "../assets/sms-react.jpeg"
+
 
 const project = [
+ {
+       
+       title: "ZenUI project for software company",
+       description: "a modern, responsive, and intuitive web solution that turns creative ideas into seamless user experiences",
+       tags: ["React", "Javacript", "tailwindCSS"],
+       image: zenuiimg, 
+     },
   {
-    title: "Portfolio, HTML, CSS, and JS",
-    description: "This is my first portfolio, I did this for my coursework.",
-    tags: ["HTML", "JavaScript", "CSS"],
-    image: portfolioimg,
-  },
+      
+      title: "Big burger Restaurant",
+      description: "This project is a simple yet engaging website built to showcase a burger restaurant menu.",
+      tags: ["HTML", "Javacript", "CSS"],
+      image: bigburgerimg, 
+    },
   {
-    title: "Portfolio, HTML, CSS, and JS",
-    description: "This is my first portfolio, I did this for my coursework.",
-    tags: ["HTML", "JavaScript", "CSS"],
-    image: portfolioimg,
-  },
-  {
-    title: "Portfolio, HTML, CSS, and JS",
-    description: "This is my first portfolio, I did this for my coursework.",
-    tags: ["HTML", "JavaScript", "CSS"],
-    image: portfolioimg,
+    title: "Student Management System",
+    description: "This is project done for my react project in campus as a final project ",
+    tags: ["React", "JavaScript", "tailwindCSS"],
+    image: smsimg,
   },
 ];
 
