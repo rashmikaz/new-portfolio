@@ -48,7 +48,7 @@ const Main = () => {
       className="w-110 relative right-100 top-15"
       initial={{ y: -100, opacity: 0 }} 
       animate={{ y: 0, opacity: 1 }} 
-      transition={{ type: 'spring', stiffness: 100, damping: 30, duration: 2  }}
+      transition={{ type: 'spring', stiffness: 100, damping: 10, duration: 2  }}
     >
       <h1 className="font-bold text-4xl sm:text-6xl lg:text-8xl tracking-wide">Designer</h1>
       <p className="text-lg text-neutral-600 max-w-4xl">
@@ -60,7 +60,7 @@ const Main = () => {
       className="w-110 relative left-90 bottom-28"
       initial={{ y: -100, opacity: 0 }} 
       animate={{ y: 0, opacity: 1 }} 
-      transition={{ type: 'spring', stiffness: 100, damping: 30, duration: 2 }} 
+      transition={{ type: 'spring', stiffness: 100, damping: 10, duration: 2 }} 
     >
       <h1 className="font-bold text-4xl sm:text-6xl lg:text-8xl tracking-wide">Developer</h1>
       <p className="text-lg text-neutral-500 max-w-4xl">
@@ -68,16 +68,26 @@ const Main = () => {
       </p>
     </motion.div>
 
-      <div className="text-center mt-6 relative left-80 top-10 w-120">
-        <p className="text-xl text-neutral-700 max-w-3xl mx-auto">
-          Hello, I'm <span className="text-6xl font-bold">Rashmika</span>, a software engineering student with a strong
-          passion for UI/UX design. I create user-friendly and visually appealing interfaces, focusing on delivering seamless experiences.
-        </p>
-      </div>
+    <motion.div
+      className="text-center mt-6 relative left-80 top-10 w-120"
+      initial={{ x: 300, opacity: 0 }} // Starts from right off-screen
+      animate={{ x: 0, opacity: 1 }} // Moves to its normal position with full opacity
+      transition={{ type: 'spring', stiffness: 100, damping: 15, duration: 2 }} // Smooth animation
+    >
+      <p className="text-xl text-neutral-700 max-w-3xl mx-auto">
+        Hello, I'm <span className="text-6xl font-bold">Rashmika</span>, a software engineering student with a strong
+        passion for UI/UX design. I create user-friendly and visually appealing interfaces, focusing on delivering seamless experiences.
+      </p>
+    </motion.div>
 
-      <div className="mt-8 relative bottom-130">
-        <img src={mainimg} alt="Main" className="w-150 mx-auto" />
-      </div>
+      <motion.div
+      className="mt-8 relative bottom-130"
+      initial={{ x: 300, opacity: 0 }} 
+      animate={{ x: 0, opacity: 1 }} 
+      transition={{ type: 'spring', stiffness: 100, damping: 25, duration: 2 }} 
+    >
+      <img src={mainimg} alt="Main" className="w-150 mx-auto" />
+    </motion.div>
 
       
       <div
