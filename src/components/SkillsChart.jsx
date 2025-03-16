@@ -13,7 +13,7 @@ const levels = ["Newbie", "Geek", "Ninja", "Jedi"];
 
 const SkillsChart = () => {
   return (
-    <div className="w-full h-[400px] p-6 relative bottom-120 ">
+    <div className="w-full h-[400px] p-6 relative bottom-230 ">
       <h2 className="text-2xl font-bold relative bottom-15 ">My Random Skills</h2>
       <ResponsiveContainer width="100%" height={350}>
         <BarChart layout="vertical" data={data} margin={{ left: 50 }}>

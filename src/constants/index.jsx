@@ -8,7 +8,7 @@ import { FolderCode } from "lucide-react";
 export const navItems = [
   { label: "Home", href: "/" },
   { label: "Project", href: "/project" },
-  { label: "Testimonials", href: "/testimonials" },
+  { label: "Mystory", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];
 

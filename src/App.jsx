@@ -12,15 +12,15 @@ const PageTransition = ({ children }) => {
 
   return (
     <motion.div
-      key={location.pathname} // Key ensures animation happens on route change
-      initial={{ opacity: 0, x: 200 }} // Start offscreen to the right with opacity 0
-      animate={{ opacity: 1, x: 0 }} // Slide in from the right to the center
-      exit={{ opacity: 0, x: -200 }} // Slide out to the left with opacity 0
+      key={location.pathname} 
+      initial={{ opacity: 0, x: 200 }} 
+      animate={{ opacity: 1, x: 0 }} 
+      exit={{ opacity: 0, x: -200 }} 
       transition={{
         type: 'spring', 
         stiffness: 300, 
         damping: 30, 
-        duration: 0.8, // Duration for smooth slide and fade
+        duration: 0.8, 
       }}
     >
       {children}
@@ -37,17 +37,17 @@ const App = () => {
           <Route
             path="/"
             element={
-              // <PageTransition>
+              
                 <Main />
-              // </PageTransition>
+             
             }
           />
           <Route
             path="/about"
             element={
-              <PageTransition>
+              
                 <About />
-              </PageTransition>
+             
             }
           />
           <Route
