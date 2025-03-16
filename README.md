@@ -21,3 +21,4 @@ Key Features
 - Dark Mode: A sleek dark mode interface that improves readability and user experience.
 
 - User-friendly Navigation: Simple and easy-to-use navigation throughout the site.
+<img width="1470" alt="Screenshot 2025-03-16 at 4 56 48 PM" src="https://github.com/user-attachments/assets/45c4a00b-4bf9-4924-a2a1-254427469e5a" />
