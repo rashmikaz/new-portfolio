@@ -12,29 +12,30 @@ import ijseimg from "../assets/ijse.jpeg"
 import { motion } from 'framer-motion';
 
 
+
 const project = [
- {
-       
-       title: "ZenUI project for software company",
-       description: "a modern, responsive, and intuitive web solution that turns creative ideas into seamless user experiences",
-       tags: ["React", "Javacript", "tailwindCSS"],
-       image: zenuiimg, 
-     },
   {
-      
-      title: "Big burger Restaurant",
-      description: "This project is a simple yet engaging website built to showcase a burger restaurant menu.",
-      tags: ["HTML", "Javacript", "CSS"],
-      image: bigburgerimg, 
-    },
+    title: "ZenUI project for software company",
+    description: "A modern, responsive, and intuitive web solution that turns creative ideas into seamless user experiences",
+    tags: ["React", "JavaScript", "tailwindCSS"],
+    image: zenuiimg,
+    githubLink: "https://github.com/rashmikaz/ZenUI",
+  },
+  {
+    title: "Big Burger Restaurant",
+    description: "This project is a simple yet engaging website built to showcase a burger restaurant menu.",
+    tags: ["HTML", "JavaScript", "CSS"],
+    image: bigburgerimg,
+    githubLink: "https://github.com/rashmikaz/big-burger-restaurant", 
+  },
   {
     title: "Student Management System",
-    description: "This is project done for my react project in campus as a final project ",
+    description: "This project was done for my react project in campus as a final project",
     tags: ["React", "JavaScript", "tailwindCSS"],
     image: smsimg,
+    githubLink: "https://github.com/rashmikaz/student-management-react",
   },
 ];
-
 const Main = () => {
   const projectSectionRef = useRef(null);
 
@@ -202,23 +203,29 @@ const Main = () => {
       {/* cards */}
 
       <div ref={projectSectionRef} className="flex flex-wrap justify-center mt-6 relative bottom-120">
-        {project.map((project, index) => (
-          <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
-            <div className="bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin">
-              <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-md mb-4" />
-              <h3 className="text-xl font-bold my-2 text-white">{project.title}</h3>
-              <p className="text-neutral-400 mb-4">{project.description}</p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {project.tags.map((tag, idx) => (
-                  <span key={idx} className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-400">{tag}</span>
-                ))}
-              </div>
-              <a href="#" className="text-white-400 font-medium">Read More →</a>
-            </div>
-          </div>
-        ))}
+  {project.map((project, index) => (
+    <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
+      <div className="bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin">
+        <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-md mb-4" />
+        <h3 className="text-xl font-bold my-2 text-white">{project.title}</h3>
+        <p className="text-neutral-400 mb-4">{project.description}</p>
+        <div className="flex flex-wrap gap-2 mb-4">
+          {project.tags.map((tag, idx) => (
+            <span key={idx} className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-400">{tag}</span>
+          ))}
+        </div>
+        <a 
+          href={project.githubLink} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-white-400 font-medium"
+        >
+          View on GitHub → 
+        </a>
       </div>
-
+    </div>
+  ))}
+</div>
       <Card
       className="max-w-sm relative bottom-115 right-100"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
