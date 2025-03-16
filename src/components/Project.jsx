@@ -4,6 +4,7 @@ import zenuiimg from "../assets/zenUI.png";
 import bigburgerimg from "../assets/big burger.jpeg";
 import smsimg from "../assets/sms-react.jpeg";
 import fximg from "../assets/sms-fx.jpeg"
+import libraryimg from "../assets/library.jpeg"
 import Footer from "./Footer";
 
 const project = [
@@ -48,6 +49,13 @@ const project = [
     tags: ["javafx", "MYSQL"],
     image: fximg,
     githubLink: "https://github.com/rashmikaz/my_student_management_system", 
+  },
+  {
+    title: "Library Management System FX",
+    description: "This Library Management System is a Java-based application designed to streamline library operations. The project features a user-friendly UI developed with JavaFX and leverages Hibernate ORM for efficient database interaction.",
+    tags: ["javafx", "MYSQL","Hibernate"],
+    image: libraryimg,
+    githubLink: "https://github.com/rashmikaz/new_library_management_system", 
   },
   
 ];
