@@ -35,7 +35,7 @@ const Aboutsection = () => {
 </motion.div>
 
 <motion.p
-  className="text-xl text-neutral-700 max-w-3xl mx-auto w-60 relative left-120 bottom-125"
+  className="text-xl text-neutral-700 max-w-3xl mx-auto w-60 absolute left-270 bottom-33"
   initial={{ x: 100, opacity: 0 }} 
   animate={{ x: 0, opacity: 1 }} 
   transition={{
@@ -49,7 +49,7 @@ const Aboutsection = () => {
 </motion.p>
 
       <motion.div
-  className="relative bottom-260 left-50"
+  className="absolute bottom-33 left-193"
   initial={{ x: -100, opacity: 0 }} 
   animate={{ x: 0, opacity: 1 }} 
   transition={{
@@ -62,20 +62,20 @@ const Aboutsection = () => {
   <img src={aboutimg1} alt="About Image" className="w-75 mx-auto" />
 </motion.div>
 
-     <div className="border-t border-gray-300 w-full mt-10 relative bottom-255"></div>
+     <div className="border-t border-gray-300 w-full mt-10  absolute bottom-20"></div>
 
-     <div className="relative bottom-120">
+     <div className="absolute top-320 right-150">
       <Skill />
      </div>
 
      <div>
-     <p className="text-xl text-neutral-300 leading-8 w-130 relative left-80 bottom-335">
+     <p className="text-xl text-neutral-300 leading-8 w-130 absolute left-170 top-220 ">
      As a software engineer and product designer, I leverage my expertise in both design and development to create functional, visually appealing web applications. I have hands-on experience with a wide range of technologies including HTML, CSS, JavaScript, React, and Node.js, and I'm constantly expanding my skill set to stay ahead of the latest trends in the industry.
       </p>
      </div>
 
 
-     <div className="relative bottom-270">
+     <div className="absolute top-330">
      <div className="text-center">
         <span className="bg-neutral-900 text-gray-300 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase"
         >
@@ -106,10 +106,14 @@ const Aboutsection = () => {
      </div>
 
      
-      <SkillsChart />
+     <div className="absolute top-550 w-300">
+       <SkillsChart />
+     </div>
 
       
-      <Footer />
+    <div className="absolute top-680">
+        <Footer />
+    </div>
   
     </div>
   );

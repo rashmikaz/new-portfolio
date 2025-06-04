@@ -44,9 +44,9 @@ const Main = () => {
   };
 
   return (
-    <div className="flex flex-col items-center lg:mt-18">
+    <div className="container mx-auto px-4 py-12 text-white tracking-wide">
      <motion.div
-      className="w-110 relative right-100 top-15"
+      className="w-110 absolute right-225 top-50"
       initial={{ y: -100, opacity: 0 }} 
       animate={{ y: 0, opacity: 1 }} 
       transition={{ type: 'spring', stiffness: 100, damping: 10, duration: 2  }}
@@ -58,7 +58,7 @@ const Main = () => {
     </motion.div>
 
     <motion.div
-      className="w-110 relative left-90 bottom-28"
+      className="w-110 absolute left-210 bottom-119"
       initial={{ y: -100, opacity: 0 }} 
       animate={{ y: 0, opacity: 1 }} 
       transition={{ type: 'spring', stiffness: 100, damping: 10, duration: 2 }} 
@@ -70,7 +70,7 @@ const Main = () => {
     </motion.div>
 
     <motion.div
-      className="text-center mt-6 relative left-80 top-10 w-120"
+      className="text-center mt-6 absolute left-200 top-130 w-120"
       initial={{ x: 300, opacity: 0 }} // Starts from right off-screen
       animate={{ x: 0, opacity: 1 }} // Moves to its normal position with full opacity
       transition={{ type: 'spring', stiffness: 100, damping: 15, duration: 2 }} // Smooth animation
@@ -82,7 +82,7 @@ const Main = () => {
     </motion.div>
 
       <motion.div
-      className="mt-8 relative bottom-130"
+      className="mt-8 absolute bottom-25 right-120"
       initial={{ x: 300, opacity: 0 }} 
       animate={{ x: 0, opacity: 1 }} 
       transition={{ type: 'spring', stiffness: 100, damping: 25, duration: 2 }} 
@@ -182,15 +182,15 @@ const Main = () => {
 </div>
 
 
-      <div className="border-t border-gray-300 w-full mt-10 relative bottom-147"></div>
+      <div className="border-t border-gray-300 w-305 mt-10 absolute bottom-25 right-35"></div>
 
-      <Link to="/about" className="mt-6 animate-bounce relative bottom-165 left-100">
+      <Link to="/about" className="mt-6 animate-bounce absolute bottom-25 left-280">
         <svg className="size-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m-7.5-7.5l7.5 7.5-7.5 7.5" />
         </svg>
       </Link>
 
-      <div className="mt-4 flex items-center space-x-2 relative bottom-160">
+      <div className="mt-4 flex items-center space-x-2 absolute bottom-10 right-143">
         <span className="relative flex size-3">
           <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-sky-400 opacity-75"></span>
           <span className="relative inline-flex size-3 rounded-full bg-sky-500"></span>
@@ -202,32 +202,49 @@ const Main = () => {
 
       {/* cards */}
 
-      <div ref={projectSectionRef} className="flex flex-wrap justify-center mt-6 relative bottom-120">
+     <div
+  ref={projectSectionRef}
+  className="flex flex-wrap justify-center mt-6 absolute top-[830px] right-30"
+>
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
   {project.map((project, index) => (
-    <div key={index} className="w-full sm:w-1/2 lg:w-1/3 px-4 py-2">
-      <div className="bg-neutral-900 rounded-md p-6 text-md border border-neutral-800 font-thin">
-        <img src={project.image} alt={project.title} className="w-full h-40 object-cover rounded-md mb-4" />
-        <h3 className="text-xl font-bold my-2 text-white">{project.title}</h3>
-        <p className="text-neutral-400 mb-4">{project.description}</p>
-        <div className="flex flex-wrap gap-2 mb-4">
-          {project.tags.map((tag, idx) => (
-            <span key={idx} className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-400">{tag}</span>
-          ))}
-        </div>
-        <a 
-          href={project.githubLink} 
-          target="_blank" 
-          rel="noopener noreferrer" 
-          className="text-white-400 font-medium"
-        >
-          View on GitHub → 
-        </a>
+    <div
+      key={index}
+      className="bg-neutral-900 rounded-xl p-4 border border-neutral-800 hover:shadow-lg hover:shadow-neutral-800 transition-all duration-300 max-w-sm w-full mx-auto"
+    >
+      <img
+        src={project.image}
+        alt={project.title}
+        className="w-full h-48 object-cover rounded-md mb-4"
+      />
+      <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
+      <p className="text-neutral-400 mb-4 line-clamp-3">{project.description}</p>
+      <div className="flex flex-wrap gap-2 mb-4">
+        {project.tags.map((tag, idx) => (
+          <span
+            key={idx}
+            className="px-3 py-1 bg-neutral-800 rounded-full text-sm text-neutral-400"
+          >
+            {tag}
+          </span>
+        ))}
       </div>
+      <a
+        href={project.githubLink}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-blue-400 font-medium hover:underline"
+      >
+        View on GitHub →
+      </a>
     </div>
   ))}
 </div>
+
+</div>
+
       <Card
-      className="max-w-sm relative bottom-115 right-100"
+      className="max-w-sm absolute top-340 right-238"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={innovesta2023img}
     >
@@ -240,7 +257,7 @@ const Main = () => {
       </Card>
 
       <Card
-      className="max-w-sm relative bottom-243 "
+      className="max-w-sm absolute top-340 left-136 "
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={innovestaimg}
     >
@@ -255,7 +272,7 @@ const Main = () => {
       </Card>
 
        <Card
-      className="max-w-sm relative bottom-410 left-100"
+      className="max-w-sm absolute top-340 left-239"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={ijseimg}
     >
@@ -269,7 +286,7 @@ const Main = () => {
 
    
 
-     <div className="">
+     <div className="absolute top-520">
      <Footer />
      </div>
      
