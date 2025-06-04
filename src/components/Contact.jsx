@@ -47,7 +47,7 @@ const Contact = () => {
       <motion.img
   src={aboutimg}
   alt=""
-  className="relative bottom-180 left-70 w-140 mx-auto"
+  className="absolute bottom-50 left-180 w-140 mx-auto"
   initial={{ x: 150, opacity: 0 }} 
   animate={{ x: 0, opacity: 1 }} 
   transition={{
@@ -57,10 +57,10 @@ const Contact = () => {
     duration: 1.2,
   }}
 />
-            <div className="border-t border-gray-300 w-full mt-10 relative bottom-190"></div>
+            <div className="border-t border-gray-300 w-full mt-10 absolute bottom-50"></div>
         
 
-        <div className="mt-10 max-w-4xl mx-auto p-6 rounded-lg shadow-md relative bottom-180 right-100">
+        <div className="mt-10 max-w-4xl mx-auto p-6 rounded-lg shadow-md absolute right-219 top-160">
         <h2 className="text-4xl font-semibold mb-15  text-white">Send me an email</h2>
         <form>
           <div className="grid-cols-1 md:grid-cols-2 gap-4 w-120">
@@ -80,9 +80,11 @@ const Contact = () => {
           <button type="submit" className="mt-4 bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md relative left-220 bottom-30">Send email</button>
         </form>
       </div>
-      <div className="relative bottom-190">
-      <Footer />
+      
+      <div className="absolute top-290">
+        <Footer />
       </div>
+      
       
     </div>
   )

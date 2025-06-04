@@ -254,7 +254,7 @@ const Main = () => {
       </p>
       </Card>
 
-      <Card
+       <Card
       className="max-w-sm relative bottom-410 left-100"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={ijseimg}
@@ -269,7 +269,7 @@ const Main = () => {
 
    
 
-     <div className="relative bottom-110">
+     <div className="">
      <Footer />
      </div>
      

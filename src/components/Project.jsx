@@ -6,6 +6,7 @@ import smsimg from "../assets/sms-react.jpeg";
 import fximg from "../assets/sms-fx.jpeg";
 import libraryimg from "../assets/library.jpeg";
 import Footer from "./Footer";
+import SocialButtons from './SocialButtons';
 
 const project = [
   {
@@ -93,6 +94,9 @@ export default function ProjectCards() {
           </div>
         ))}
       </div>
+
+
+
 
       <Footer />
     </div>
