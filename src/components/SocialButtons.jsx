@@ -4,26 +4,30 @@ const SocialButtons = () => {
   return (
     <div className="grid grid-cols-2 ">
      
-      <TERipple rippleColor="light">
-        <button
-          type="button"
-          className="mb-14  flex items-center rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
-          style={{ backgroundColor: "#1da1f2" }}
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            className="mr-2 h-4 w-4"
-            fill="currentColor"
-            viewBox="0 0 24 24"
-          >
-            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-          </svg>
-          Twitter
-        </button>
-      </TERipple>
+     <a href="https://wa.me/94705648049">
+       <TERipple rippleColor="light">
+  <button
+    type="button"
+    className="mb-14 flex items-center rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+    style={{ backgroundColor: "#25D366" }}
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      className="mr-2 h-4 w-4"
+      fill="currentColor"
+      viewBox="0 0 448 512"
+    >
+      <path d="M380.9 97.1C339-3.3 226.7-29.8 142.9 29.2 68.2 81.3 50.1 181 91.2 259.4L0 480l226.3-91.5c76.6 39.8 170.2 20.9 221.3-44.5 52.3-66.4 48.6-162.1-10.7-226.9zm-38.5 205c-5.6 15.7-27.4 29.6-37.6 31.6-9.6 1.9-22 2.8-35.3-2.2-8.1-3.1-18.5-6-32.1-11.9-56.4-23.9-92.8-80.3-95.6-84.1-2.8-3.8-22.8-30.3-22.8-57.7s14.3-41 19.4-46.5c5-5.6 11-7 14.7-7 3.7 0 7.3 0 10.5.2 3.4.2 7.9-.9 12.3 9.3 4.4 10.1 15 35 16.3 37.5 1.3 2.5 2.2 5.5.4 8.9-1.7 3.3-2.5 5.4-4.9 8.4s-5.1 6.5-7.3 8.7c-2.4 2.5-4.8 5.1-2 10 2.8 5 12.6 20.8 27 33.7 18.6 16.7 34.2 21.9 39.4 24.3 4.9 2.1 7.7 1.8 10.5-1.1 2.8-2.8 12-14.2 15.2-19s6.3-3.8 10.5-2.3c4.2 1.4 26.4 12.5 30.9 14.7 4.5 2.3 7.5 3.4 8.6 5.3 1.2 2 1.2 11.6-4.4 27.3z"/>
+    </svg>
+    WhatsApp
+  </button>
+</TERipple>
 
+
+     </a>
      
-      <TERipple rippleColor="light">
+      <a href="https://www.instagram.com/_rashmikas/">
+        <TERipple rippleColor="light">
         <button
           type="button"
           className="flex items-center rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
@@ -40,9 +44,11 @@ const SocialButtons = () => {
           Instagram
         </button>
       </TERipple>
+      </a>
 
      
-      <TERipple rippleColor="light">
+      <a href="https://www.linkedin.com/in/rashmika-hewawitharane-6b3157287/">
+        <TERipple rippleColor="light">
         <button
           type="button"
           className="flex items-center rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
@@ -59,9 +65,11 @@ const SocialButtons = () => {
           LinkedIn
         </button>
       </TERipple>
+      </a>
 
       
-      <TERipple rippleColor="light">
+      <a href="https://www.facebook.com/rashmika.hewawitharana">
+        <TERipple rippleColor="light">
         <button
           type="button"
           className="flex items-center rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
@@ -78,6 +86,7 @@ const SocialButtons = () => {
           Facebook
         </button>
       </TERipple>
+      </a>
     </div>
   );
 };
