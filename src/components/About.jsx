@@ -74,6 +74,19 @@ const Aboutsection = () => {
       </p>
      </div>
 
+     <div className="absolute top-260 left-50">
+      <a
+      href="public/rashmika resume.pdf"
+      download
+      className="inline-block px-4 py-2 mt-4 text-white  bg-sky-400 rounded-lg hover:bg-sky-700 transition-colors"
+      >
+     Download Resume
+     </a>
+     </div>
+
+      
+
+
 
      <div className="absolute top-310 w-280">
      <div className="text-center ">
