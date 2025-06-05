@@ -8,7 +8,7 @@ import zenuiimg from "../assets/zenUI.png"
 import bigburgerimg from "../assets/big burger.jpeg"
 import smsimg from "../assets/sms-react.jpeg"
 import innovesta2023img from "../assets/innovesta-2023.jpeg"
-import ijseimg from "../assets/ijse.jpeg"
+// import ijseimg from "../assets/ijse.jpeg"
 import { motion } from 'framer-motion';
 
 
@@ -46,24 +46,25 @@ const Main = () => {
   return (
     <div className="container mx-auto px-4 py-12 text-white tracking-wide">
      <motion.div
-      className="w-110 absolute right-225 top-50"
+      className="w-110 absolute right-210 top-43"
       initial={{ y: -100, opacity: 0 }} 
       animate={{ y: 0, opacity: 1 }} 
       transition={{ type: 'spring', stiffness: 100, damping: 10, duration: 2  }}
     >
-      <h1 className="font-bold text-4xl sm:text-6xl lg:text-8xl tracking-wide">Designer</h1>
+    <h1 className="font-bold text-[2.25rem] sm:text-[3.5rem] lg:text-[5rem] tracking-wide">Designer</h1>
+
       <p className="text-lg text-neutral-600 max-w-4xl">
         UI-focused product designer with expertise in creating design systems and crafting intuitive, user-friendly interfaces that enhance overall user experiences.
       </p>
     </motion.div>
 
     <motion.div
-      className="w-110 absolute left-210 bottom-119"
+      className="w-110 absolute left-210 bottom-120"
       initial={{ y: -100, opacity: 0 }} 
       animate={{ y: 0, opacity: 1 }} 
       transition={{ type: 'spring', stiffness: 100, damping: 10, duration: 2 }} 
     >
-      <h1 className="font-bold text-4xl sm:text-6xl lg:text-8xl tracking-wide">Developer</h1>
+      <h1 className="font-bold text-[2.25rem] sm:text-[3.5rem] lg:text-[5rem] tracking-wide">Developer</h1>
       <p className="text-lg text-neutral-500 max-w-4xl">
         Frontend and Backend developer who writes clean, elegant, and efficient code.
       </p>
@@ -92,11 +93,11 @@ const Main = () => {
 
       
       <div
-  className="relative bottom-140 right-120"
-  style={{ display: 'flex', gap: '40px' }}
+  className="absolute bottom-30 right-267"
+  style={{ display: 'flex', gap: '30px' }}
 >
   <a
-    href="#!"
+    href="https://www.facebook.com/rashmika.hewawitharana"
     role="button"
     aria-label="Facebook"
     className="social-icon"
@@ -104,7 +105,7 @@ const Main = () => {
     {/* Facebook */}
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-7 w-7"
+      className="h-5 w-5"
       fill="gray"
       viewBox="0 0 24 24"
     >
@@ -113,7 +114,7 @@ const Main = () => {
   </a>
 
   <a
-    href="#!"
+    href="https://www.instagram.com/_rashmikas/"
     role="button"
     aria-label="Instagram"
     className="social-icon"
@@ -121,7 +122,7 @@ const Main = () => {
     {/* Instagram */}
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      className="h-7 w-7"
+      className="h-5 w-5"
       fill="gray"
       viewBox="0 0 24 24"
     >
@@ -129,62 +130,69 @@ const Main = () => {
     </svg>
   </a>
 
-  <a
-    href="#!"
-    role="button"
-    aria-label="LinkedIn"
-    className="social-icon"
+ <a
+  href="https://www.linkedin.com/in/rashmika-hewawitharane-6b3157287/"
+  role="button"
+  aria-label="LinkedIn"
+  className="social-icon"
+>
+  {/* LinkedIn Icon */}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-5 w-5"
+    viewBox="0 0 24 24"
+    fill="gray"
   >
-    {/* LinkedIn */}
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-7 w-7"
-      fill="gray"
-      viewBox="0 0 24 24"
-    >
-      <path d="M4.98 3.5c0 .35-.29.64-.64.64h-2c-.35 0-.64-.29-.64-.64v-2c0-.35.29-.64.64-.64h2c.35 0 .64.29.64.64v2zm-1.28-2c-.14 0-.28.14-.28.28v2c0 .14.14.28.28.28h.72c.14 0 .28-.14.28-.28v-2c0-.14-.14-.28-.28-.28h-.72zm5.48 4.88c-.06 0-.12.01-.18.02-.16-.38-.51-.66-.91-.73-.13-.02-.27-.02-.41-.02-.55 0-1.03.16-1.41.43-.17.13-.31.28-.44.44-.49.63-.79 1.42-.79 2.27 0 2.14 1.73 3.88 3.88 3.88 1.72 0 3.16-.9 3.88-2.21-.79 1.23-2.31 2.06-4.14 2.06-3.23 0-5.88-2.64-5.88-5.88s2.64-5.88 5.88-5.88c1.26 0 2.44.37 3.44 1.01.49-.43.88-.95 1.14-1.56-.9-.3-1.86-.47-2.86-.47-3.99 0-7.2 3.21-7.2 7.2s3.21 7.2 7.2 7.2c3.29 0 6.12-2.23 7.05-5.14-.55-.14-1.07-.41-1.56-.76z" />
-    </svg>
-  </a>
+    <path d="M19 0h-14C2.24 0 1 1.24 1 2.75v18.5C1 22.76 2.24 24 3.75 24h16.5C21.76 24 23 22.76 23 21.25V2.75C23 1.24 21.76 0 20.25 0H19zM8.34 20H5.67V9h2.67v11zM7 7.5C6.04 7.5 5.25 6.71 5.25 5.75S6.04 4 7 4s1.75.79 1.75 1.75S7.96 7.5 7 7.5zM20 20h-2.67v-5.5c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94V20h-2.67V9h2.56v1.5h.04c.36-.68 1.24-1.39 2.55-1.39 2.73 0 3.24 1.8 3.24 4.13V20z" />
+  </svg>
+</a>
+
 
   <a
-    href="#!"
-    role="button"
-    aria-label="GitHub"
-    className="social-icon"
+  href="https://github.com/rashmikaz"
+  role="button"
+  aria-label="GitHub"
+  className="social-icon"
+>
+  {/* GitHub Icon */}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-5 w-5"
+    viewBox="0 0 24 24"
+    fill="gray"
   >
-    {/* GitHub */}
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-7 w-7"
-      fill="gray"
-      viewBox="0 0 24 24"
-    >
-      <path d="M12 2c-5.5 0-10 4.5-10 10 0 4.4 2.8 8.1 6.6 9.4.5.1.7-.2.7-.4v-1.5c-2.7.6-3.3-1.3-3.3-1.3-.4-.9-.9-1.2-.9-1.2-.7-.5.1-.5.1-.5 1.2.1 1.8 1.3 1.8 1.3 1.5 0 2.3-1 2.8-2.2 2.8-2.3 0-3.7-1.5-3.7-3.1 0-1.4 1-2.7 2.6-2.7 1.4 0 2.4 1 2.4 2.3 0 1.7-1.5 2.9-3.5 2.9-.7 0-1.3-.1-1.9-.3-.1-.3-.1-.7-.1-1.1 0-1 .5-1.5 1.2-1.5 1.4 0 2.6 1.3 2.6 2.6 0 2.2-1.6 3.9-4 3.9-3.3 0-5.9-2.6-5.9-5.9 0-2.8 1.9-5.3 4.6-6.1-.1-.7.1-1.3.7-1.5 2.1-.6 3.8 1.4 3.8 1.4s1.2 1 2.5 1.2c1.1-.4 2.1-.9 3.1-1.5-.1-.6-.4-.8-.6-.8-1.7 0-3.5-2.3-3.5-4.8 0-2.5 2.8-4.8 4.9-4.8 1.8 0 3.6.9 4.7 2.3-.2-.6-.8-1.3-1.4-1.3-1.7 0-3.2 1.8-3.2 3.4 0 1.7 1.5 3.1 3.3 3.1 1.9 0 3.4-1.6 3.4-3.6 0-1.9-1.6-3.3-3.4-3.3zm0-2c-7.7 0-14 6.3-14 14 0 7.7 6.3 14 14 14 7.7 0 14-6.3 14-14 0-7.7-6.3-14-14-14z" />
-    </svg>
-  </a>
+    <path
+      fillRule="evenodd"
+      d="M12 2C6.477 2 2 6.484 2 12.012c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.238-.009-.868-.014-1.703-2.782.605-3.369-1.34-3.369-1.34-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.071 1.532 1.032 1.532 1.032.892 1.53 2.341 1.088 2.91.832.091-.647.35-1.088.636-1.338-2.22-.254-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.254-.446-1.277.098-2.66 0 0 .84-.27 2.75 1.026a9.564 9.564 0 0 1 2.5-.336c.848.004 1.705.115 2.5.337 1.91-1.296 2.748-1.026 2.748-1.026.546 1.383.202 2.406.1 2.66.64.7 1.028 1.595 1.028 2.688 0 3.847-2.339 4.694-4.566 4.944.359.31.678.922.678 1.86 0 1.343-.012 2.426-.012 2.756 0 .268.18.58.688.482A10.013 10.013 0 0 0 22 12.012C22 6.484 17.523 2 12 2Z"
+      clipRule="evenodd"
+    />
+  </svg>
+</a>
+
 
   <a
-    href="#!"
-    role="button"
-    aria-label="Twitter"
-    className="social-icon"
+  href="https://x.com/hewawitharane"
+  role="button"
+  aria-label="X"
+  className="social-icon"
+>
+  {/* X Icon */}
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    className="h-5 w-5"
+    viewBox="0 0 24 24"
+    fill="gray"
   >
-    {/* Twitter */}
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      className="h-7 w-7"
-      fill="gray"
-      viewBox="0 0 24 24"
-    >
-      <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z" />
-    </svg>
-  </a>
+    <path d="M21.543 2H17.4l-5.471 6.797L6.343 2H2l7.828 10.113L2 22h4.2l5.928-7.36L17.658 22H22l-8.246-10.652L21.543 2z" />
+  </svg>
+</a>
+
 </div>
 
 
       <div className="border-t border-gray-300 w-305 mt-10 absolute bottom-25 right-35"></div>
 
-      <Link to="/about" className="mt-6 animate-bounce absolute bottom-25 left-280">
+      <Link to="/about" className="mt-6 animate-bounce absolute bottom-27 left-288">
         <svg className="size-9" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="2.5" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12h15m-7.5-7.5l7.5 7.5-7.5 7.5" />
         </svg>
@@ -206,11 +214,11 @@ const Main = () => {
   ref={projectSectionRef}
   className="flex flex-wrap justify-center mt-6 absolute top-[830px] right-30"
 >
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 px-4">
+  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-13">
   {project.map((project, index) => (
     <div
       key={index}
-      className="bg-neutral-900 rounded-xl p-4 border border-neutral-800 hover:shadow-lg hover:shadow-neutral-800 transition-all duration-300 max-w-sm w-full mx-auto"
+      className="bg-neutral-900 rounded-xl p-5 border border-neutral-800 hover:shadow-lg hover:shadow-neutral-800 transition-all duration-300 w-88"
     >
       <img
         src={project.image}
@@ -244,11 +252,11 @@ const Main = () => {
 </div>
 
       <Card
-      className="max-w-sm absolute top-340 right-238"
+      className="w-95 absolute top-350 right-223"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={innovesta2023img}
     >
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 ">
+      <h5 className="text-2xl font-bold tracking-tight text-blue-400 ">
         Innovesta program Ijse 2023
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
@@ -256,22 +264,31 @@ const Main = () => {
       </p>
       </Card>
 
-      <Card
-      className="max-w-sm absolute top-340 left-136 "
-      imgAlt="Meaningful alt text for an image that is not purely decorative"
-      imgSrc={innovestaimg}
-    >
-      <h5 className="text-2xl font-bold tracking-tight text-gray-900 ">
+      <Card className="w-174 absolute top-350 left-150">
+  <div className="flex items-start">
+    
+    <img
+      src={innovestaimg}
+      alt="Meaningful alt text for an image that is not purely decorative"
+      className="w-60 h-68 object-cover rounded"
+    />
+
+   
+    <div className="ml-4">
+      <h5 className="text-2xl font-bold tracking-tight text-blue-400">
         Noteworthy technology acquisitions 2021
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
         Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
-        Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+         Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+          Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
+           Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
       </p>
-      </Card>
+    </div>
+  </div>
+</Card>
 
-       <Card
+       {/* <Card
       className="max-w-sm absolute top-340 left-239"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={ijseimg}
@@ -282,11 +299,11 @@ const Main = () => {
       <p className="font-normal text-gray-700 dark:text-gray-400">
         Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
       </p>
-      </Card>
+      </Card> */}
 
    
 
-     <div className="absolute top-520">
+     <div className="absolute top-480">
      <Footer />
      </div>
      
