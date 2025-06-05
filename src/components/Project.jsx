@@ -6,6 +6,7 @@ import smsimg from "../assets/sms-react.jpeg";
 import fximg from "../assets/sms-fx.jpeg";
 import libraryimg from "../assets/library.jpeg";
 import plantsy from "../assets/plantsy.jpeg";
+import currency from "../assets/web currency.jpeg";
 import Footer from "./Footer";
 import SocialButtons from './SocialButtons';
 
@@ -37,6 +38,13 @@ const project = [
     tags: ["React", "JavaScript", "tailwindCSS"],
     image: zenuiimg,
     githubLink: "https://github.com/rashmikaz/ZenUI",
+  },
+  {
+    title: "Currency conveter",
+    description: "Currency Converter Web App that allows users to quickly and easily convert between different currencies using real-time exchange rates.",
+    tags: ["React", "Express.js", "tailwindCSS"],
+    image: currency,
+    githubLink: "https://github.com/rashmikaz/e-commerce-app",
   },
   {
     title: "Big burger Restaurant",
