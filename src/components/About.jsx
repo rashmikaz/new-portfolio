@@ -10,9 +10,9 @@ import { motion } from 'framer-motion';
 
 const Aboutsection = () => {
   return (
-    <div className="flex flex-col items-center mt-6 lg:mt-24">
+    <div className="flex flex-col items-center mt-6 lg:mt-24 absolute left-140">
     <motion.div
-  className="w-130 relative right-90"
+  className="w-112 relative right-91"
   initial={{ x: -100, opacity: 0 }} 
   animate={{ x: 0, opacity: 1 }} 
   transition={{
@@ -28,14 +28,14 @@ const Aboutsection = () => {
     I'm a designer & developer in Sri Lanka, with a passion for creating intuitive and user-friendly digital experiences.
   </p>
   
-  <p className="text-xl text-neutral-300 leading-8">
+  <p className="text-xl text-neutral-300 leading-10">
     I’m Rashmika, a passionate and dedicated software engineering student with a deep interest in UI/UX design. My journey in the world of technology started with a curiosity for problem-solving and a fascination with how digital tools can improve user experiences.
-    I have honed my skills through hands-on learning and projects that focus on creating intuitive, user-friendly interfaces. My work emphasizes clean code, thoughtful design, and a focus on how users interact with technology, ensuring every project is not only functional but delightful to use.
+    I have honed my skills through hands-on learning and projects that focus on creating intuitive, user-friendly interfaces.
   </p>
 </motion.div>
 
 <motion.p
-  className="text-xl text-neutral-700 max-w-3xl mx-auto w-60 absolute left-270 bottom-33"
+  className="text-xl text-neutral-700 max-w-3xl mx-auto w-58 absolute left-120 bottom-0"
   initial={{ x: 100, opacity: 0 }} 
   animate={{ x: 0, opacity: 1 }} 
   transition={{
@@ -49,7 +49,7 @@ const Aboutsection = () => {
 </motion.p>
 
       <motion.div
-  className="absolute bottom-33 left-193"
+  className="absolute bottom-0 left-39 w-80"
   initial={{ x: -100, opacity: 0 }} 
   animate={{ x: 0, opacity: 1 }} 
   transition={{
@@ -59,24 +59,24 @@ const Aboutsection = () => {
     duration: 1.5,
   }}
 >
-  <img src={aboutimg1} alt="About Image" className="w-75 mx-auto" />
+  <img src={aboutimg1} alt="About Image" className=" h-140" />
 </motion.div>
 
-     <div className="border-t border-gray-300 w-full mt-10  absolute bottom-20"></div>
+     <div className="border-t border-gray-300 w-70 mt-10  absolute bottom-0 left-47"></div>
 
-     <div className="absolute top-320 right-150">
+     <div className="absolute top-290 right-13 w-full">
       <Skill />
      </div>
 
      <div>
-     <p className="text-xl text-neutral-300 leading-8 w-130 absolute left-170 top-220 ">
+     <p className="text-xl text-neutral-300 leading-10 w-130 absolute left-50 top-190 ">
      As a software engineer and product designer, I leverage my expertise in both design and development to create functional, visually appealing web applications. I have hands-on experience with a wide range of technologies including HTML, CSS, JavaScript, React, and Node.js, and I'm constantly expanding my skill set to stay ahead of the latest trends in the industry.
       </p>
      </div>
 
 
-     <div className="absolute top-330">
-     <div className="text-center">
+     <div className="absolute top-310 w-280">
+     <div className="text-center ">
         <span className="bg-neutral-900 text-gray-300 rounded-full h-6 text-sm font-medium px-2 py-1 uppercase"
         >
           Service
@@ -106,7 +106,7 @@ const Aboutsection = () => {
      </div>
 
      
-     <div className="absolute top-550 w-300">
+     <div className="absolute top-550  w-300">
        <SkillsChart />
      </div>
 

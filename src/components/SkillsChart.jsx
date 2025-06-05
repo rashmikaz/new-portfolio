@@ -2,11 +2,11 @@ import React from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from "recharts";
 
 const data = [
-  { name: "Tea drinking", value: 95, color: "#82CBC4" },
-  { name: "Thinking Design", value: 90, color: "#F4C7C3" },
-  { name: "Figma", value: 95, color: "#F4B844" },
+  { name: "Tea drinking", value: 75, color: "#82CBC4" },
+  { name: "Thinking Design", value: 98, color: "#F4C7C3" },
+  { name: "Figma", value: 89, color: "#F4B844" },
   { name: "coding", value: 75, color: "#C49A6C" },
-  { name: "Movies", value: 40, color: "#E46666" },
+  { name: "Movies", value: 60, color: "#E46666" },
 ];
 
 const levels = ["Newbie", "Geek", "Ninja", "Jedi"];
@@ -36,6 +36,15 @@ const SkillsChart = () => {
           </Bar>
         </BarChart>
       </ResponsiveContainer>
+
+      <a
+      href="/resume.pdf"
+      download
+      className="inline-block px-4 py-2 mt-4 text-white bg-blue-600 rounded-lg hover:bg-blue-700 transition-colors"
+      >
+     Download Resume
+     </a>
+
     </div>
   );
 };
