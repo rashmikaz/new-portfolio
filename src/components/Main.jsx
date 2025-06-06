@@ -64,7 +64,7 @@ const Main = () => {
       animate={{ y: 0, opacity: 1 }} 
       transition={{ type: 'spring', stiffness: 100, damping: 10, duration: 2 }} 
     >
-      <h1 className="font-bold text-[2.25rem] sm:text-[3.5rem] lg:text-[5rem] tracking-wide">Developer</h1>
+      <h1 className="font-bold text-[2.25rem] sm:text-[3.5rem] lg:text-[5rem] tracking-wide"> Developer</h1>
       <p className="text-lg text-neutral-500 max-w-4xl">
         Frontend and Backend developer who writes clean, elegant, and efficient code.
       </p>
@@ -251,20 +251,20 @@ const Main = () => {
 
 </div>
 
-      <Card
+      {/* <Card
       className="w-95 absolute top-350 right-223"
       imgAlt="Meaningful alt text for an image that is not purely decorative"
       imgSrc={innovesta2023img}
     >
       <h5 className="text-2xl font-bold tracking-tight text-blue-400 ">
-        Innovesta program Ijse 2023
+        Team vexon
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
         Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
       </p>
-      </Card>
+      </Card> */}
 
-      <Card className="w-174 absolute top-350 left-150">
+      {/* <Card className="w-174 absolute top-350 left-150">
   <div className="flex items-start">
     
     <img
@@ -276,7 +276,7 @@ const Main = () => {
    
     <div className="ml-4">
       <h5 className="text-2xl font-bold tracking-tight text-blue-400">
-        Noteworthy technology acquisitions 2021
+        Innovesta program Ijse 2023
       </h5>
       <p className="font-normal text-gray-700 dark:text-gray-400">
         Here are the biggest enterprise technology acquisitions of 2021 so far, in reverse chronological order.
@@ -286,7 +286,7 @@ const Main = () => {
       </p>
     </div>
   </div>
-</Card>
+</Card> */}
 
        {/* <Card
       className="max-w-sm absolute top-340 left-239"
@@ -303,7 +303,7 @@ const Main = () => {
 
    
 
-     <div className="absolute top-480">
+     <div className="absolute top-350">
      <Footer />
      </div>
      
