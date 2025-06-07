@@ -1,13 +1,10 @@
 import React, { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import mainimg from "../assets/main.png";
-import innovestaimg from "../assets/innovesta.jpeg"
 import Footer from './Footer';
-import { Card } from "flowbite-react";
 import zenuiimg from "../assets/zenUI.png"
 import bigburgerimg from "../assets/big burger.jpeg"
 import smsimg from "../assets/sms-react.jpeg"
-import innovesta2023img from "../assets/innovesta-2023.jpeg"
 // import ijseimg from "../assets/ijse.jpeg"
 import { motion } from 'framer-motion';
 
