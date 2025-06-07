@@ -1,5 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 import { navItems } from "../constants";
 
 const Navbar = () => {
@@ -20,8 +20,13 @@ const Navbar = () => {
             ))}
           </ul>
           <div className="hidden lg:flex justify-center space-x-12 items-center relative right-25">
-            <Link to="/blog" className="py-2 px-3 border rounded-md">Blog</Link>
-            <Link to="/contact" className="bg-gradient-to-r from-gray-700 to-gray-900 text-white py-2 px-3 rounded-md shadow-md transform hover:scale-105 hover:from-gray-800 hover:to-gray-900 transition-all duration-300 ease-in-out">
+            <Link to="/blog" className="py-2 px-3 border rounded-md">
+              Blog
+            </Link>
+            <Link
+              to="/contact"
+              className="bg-gradient-to-r from-gray-700 to-gray-900 text-white py-2 px-3 rounded-md shadow-md transform hover:scale-105 hover:from-gray-800 hover:to-gray-900 transition-all duration-300 ease-in-out"
+            >
               Say Hello
             </Link>
           </div>

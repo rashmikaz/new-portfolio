@@ -1,5 +1,6 @@
 .loader {
-  border-top-color: #3498db; /* or your theme color */
+  border-top-color: #3498db;
+  /* or your theme color */
   animation: spin 1s linear infinite;
 }
 

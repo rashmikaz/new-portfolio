@@ -1,4 +1,18 @@
-import { FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaDatabase, FaFigma, FaPython, FaGithub, FaDocker, FaLinux, FaJava } from "react-icons/fa";
+import {
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+  FaReact,
+  FaNodeJs,
+  FaGitAlt,
+  FaDatabase,
+  FaFigma,
+  FaPython,
+  FaGithub,
+  FaDocker,
+  FaLinux,
+  FaJava,
+} from "react-icons/fa";
 import "animate.css";
 
 const Skill = () => {
