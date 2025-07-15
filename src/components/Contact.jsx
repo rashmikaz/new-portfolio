@@ -2,6 +2,8 @@ import SocialButtons from "./SocialButtons";
 import aboutimg from "../assets/main.png";
 import Footer from "./Footer";
 import { motion } from "framer-motion";
+import "../responsive/Contact.css";
+
 
 const Contact = () => {
   return (
